@@ -19,6 +19,22 @@ body{
     background-color: var(--white);
 }
 
+.flex{
+    display: flex;
+
+    &-justcont-c{
+        justify-content: center;
+    }
+
+    &-justcont-sb{
+        justify-content: space-between;
+    }
+
+    &-alignit-c{
+        align-items: center;
+    }
+}
+
 .home{
     &-bg{
         height: 100vh;
@@ -33,15 +49,108 @@ body{
     }
 }
 
+.page{
+    &-padding{
+        width: 100vw;
+        padding: 40px 0 0 55px;
+    }
+}
+
+.header{
+    li{
+        list-style: none;
+    }
+
+    &-logo{
+        width: 48px;
+    }
+
+    &-nav{
+        padding-left: 123px;
+
+        &-custom{
+            height: 96px;
+            width: 830px;
+            align-self: end;
+            backdrop-filter: blur(20px);
+        }
+
+        &-link{
+            font-weight: 700;
+        }
+
+        &-each{
+            height: 96px;
+            margin-right: 48px;
+            background: none;
+            border: none;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -3px;
+            transition: all 150ms ease-in-out;
+            cursor: pointer;
+
+            font-family: $font2;
+            font-size: 16px;
+            letter-spacing: 2.7px;
+            color: var(--white);
+        
+        &:hover{
+            border-bottom: 3px solid #979797;
+        }
+
+            &-last{
+                margin-right: 0;
+            }
+
+            &-active{
+                border-bottom: 3px solid #ffffff !important;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 767px){
     .dn-mob{
         display: none;
+    }
+
+    .page{
+        &-padding{
+            padding: 24px 24px 0 24px;
+        }
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px){
     .dn-med{
         display: none;
+    }
+
+    .page{
+        &-padding{
+            padding: 24px 48px 0 39px;
+        }
+    }
+
+    .header{
+        &-nav{
+            padding-left: 48px;
+
+            &-custom{
+                height: 96px;
+                width: 450px;
+                align-self: end;
+                backdrop-filter: blur(20px);
+            }
+
+            &-each{
+                margin-right: 35px;
+
+                font-size: 14px;
+                letter-spacing: 2.35px;
+            }
+        }
+
     }
 }
 
