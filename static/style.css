@@ -95,6 +95,43 @@ body {
   width: 100vw;
 }
 
+.page-padding {
+  width: 100vw;
+  padding: 40px 0 0 55px;
+}
+
+@media screen and (max-width: 767px) {
+  .dn-mob {
+    display: none;
+  }
+  .page-padding {
+    padding: 24px 24px 0 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .dn-med {
+    display: none;
+  }
+  .page-padding {
+    padding: 24px 48px 0 39px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .dn-desk {
+    display: none;
+  }
+}
+:root {
+  --white: hsl(0, 0, 100, 100%);
+  --purple: hsl(231, 76, 90);
+  --dblue: hsl(229, 35%, 7, 100%);
+  --black: hsl(0, 0, 0, 100%);
+  --grey: hsl(230, 10, 42, 100%);
+  --dwhite: hsl(0, 0, 100, 4%);
+  --hover: hsl(0, 0, 59, 100%);
+  --menu: hsl(231, 77, 90);
+}
+
 .home-bg {
   position: absolute;
   top: 0;
@@ -125,17 +162,13 @@ body {
 .home-circle {
   height: 274px;
   width: 274px;
+  border: none;
   border-radius: 50%;
   color: hsl(229, 35%, 7%);
   background-color: #ffffff;
   text-align: center;
   letter-spacing: 2px;
   line-height: 1px;
-}
-
-.page-padding {
-  width: 100vw;
-  padding: 40px 0 0 55px;
 }
 
 .header li {
@@ -235,12 +268,6 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .dn-mob {
-    display: none;
-  }
-  .page-padding {
-    padding: 24px 24px 0 24px;
-  }
   .header-nav-each {
     height: 31px;
     width: 222px;
@@ -262,12 +289,6 @@ body {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
-  .dn-med {
-    display: none;
-  }
-  .page-padding {
-    padding: 24px 48px 0 39px;
-  }
   .header-nav {
     padding-left: 48px;
   }
@@ -283,19 +304,4 @@ body {
     font-size: 14px;
     letter-spacing: 2.35px;
   }
-}
-@media screen and (min-width: 1440px) {
-  .dn-desk {
-    display: none;
-  }
-}
-:root {
-  --white: hsl(0, 0, 100, 100%);
-  --purple: hsl(231, 76%, 90%);
-  --dblue: hsl(229, 35, 7, 100%);
-  --black: hsl(0, 0, 0, 100%);
-  --grey: hsl(230, 10, 42, 100%);
-  --dwhite: hsl(0, 0, 100, 4%);
-  --hover: hsl(0, 0, 59, 100%);
-  --menu: hsl(231, 77%, 90%);
 }/*# sourceMappingURL=style.css.map */
