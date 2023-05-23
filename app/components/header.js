@@ -18,12 +18,10 @@ export default function Header(){
 
     function toggleMenu(){
         setState(state => !state);
-
-        console.log(state);
     }
 
     return(
-        <div className="home-content page-padding">
+        <div className="header-content page-padding">
             <header className="flex flex-justcont-sb flex-alignit-c flex-alignit-c header">
                 <Link href="/" className="header-logo"><Image src={logo} alt="Logo" className="header-logo" /></Link>
                 <div className="flex flex-alignit-c header-nav-custom dn-mob">

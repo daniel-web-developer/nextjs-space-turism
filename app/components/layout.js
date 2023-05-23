@@ -3,7 +3,7 @@ import Navbar from './header.js'
 export default function Layout({children}){
     return(
         <div>
-            <main>
+            <main class="layout">
             <Navbar />
                 {children}
             </main>
