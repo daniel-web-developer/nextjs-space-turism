@@ -1,4 +1,4 @@
-import Navbar from './header.js'
+import Navbar from './header.js';
 
 export default function Layout({children}){
     return(

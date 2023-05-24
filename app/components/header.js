@@ -1,9 +1,9 @@
-import styles from '../style.css'
-import Image from 'next/image'
-import Link from 'next/link'
-import logo from '../assets/shared/logo.svg'
-import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import styles from '../style.css';
+import Image from 'next/image';
+import Link from 'next/link';
+import logo from '../assets/shared/logo.svg';
+import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 export default function Header(){
 

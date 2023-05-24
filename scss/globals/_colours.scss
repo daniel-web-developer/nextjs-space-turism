@@ -1,12 +1,12 @@
 :root{
-    --white: hsl(0, 0, 100, 100%);
-    --purple: hsl(231, 76, 90);
-    --dblue: hsl(229, 35%, 7, 100%);
+    --white: hsl(0, 0%, 100%);
+    --purple: hsl(231, 76%, 90%);
+    --dblue: hsl(230, 33%, 7%);
 
-    --black: hsl(0, 0, 0, 100%);
-    --grey: hsl(230, 10, 42, 100%);
-    --dwhite: hsl(0, 0, 100, 4%);
+    --black: hsl(0, 0%, 0%);
+    --grey: hsl(229, 10%, 42%);
+    --dwhite: hsla(0, 0%, 100%, 0.04);
 
-    --hover: hsl(0, 0, 59, 100%);
-    --menu : hsl(231, 77, 90);
+    --hover: hsl(0, 0%, 59%);
+    --menu : hsl(231, 76%, 90%);
 }
