@@ -17,7 +17,7 @@ export default function Home() {
         <Image src={bgmed} fill alt="" className="home-bg dn-mob dn-desk" />
         <Image src={bgmob} fill alt="" className="home-bg dn-med dn-desk" />
       </div>
-      <div className="flex flex-justcont-sb home-content page-padding">
+      <div className="flex home-content page-padding page-med">
         <div className="home-text">
           <h5>SO, YOU WANT TO TRAVEL TO</h5>
           <h1>SPACE</h1>

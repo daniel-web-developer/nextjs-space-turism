@@ -50,18 +50,18 @@ export default function Header(){
                     <div>
                         <span className={state === false ? "header-overlay" : "header-overlay header-overlay-active"}>
                             <ul className="flex flex-dir-col">
-                                    <li>
-                            <Link href="/"><button className={usePathname() == "/" ? withActiveFirst : withoutActiveFirst}><span className="header-nav-link dn-med">00</span> HOME</button></Link>
-                        </li>
-                        <li>
-                            <Link href="/destination"><button className={usePathname() == "/destination" ? withActive : withoutActive}><span className="header-nav-link dn-med">01</span> DESTINATION</button></Link>
-                        </li>
-                        <li>
-                            <Link href="/crew"><button className={usePathname() == "/crew" ? withActive : withoutActive}><span className="header-nav-link dn-med">02</span> CREW</button></Link>
-                        </li>
-                        <li>
-                            <Link href="/tech"><button className={usePathname() == "/tech" ? withActiveLast : withoutActiveLast}><span className="header-nav-link dn-med">03</span> TECHNOLOGY</button></Link>
-                        </li>
+                                <li>
+                                    <Link href="/"><button className={usePathname() == "/" ? withActiveFirst : withoutActiveFirst}><span className="header-nav-link dn-med">00</span> HOME</button></Link>
+                                </li>
+                                <li>
+                                    <Link href="/destination"><button className={usePathname() == "/destination" ? withActive : withoutActive}><span className="header-nav-link dn-med">01</span> DESTINATION</button></Link>
+                                </li>
+                                <li>
+                                    <Link href="/crew"><button className={usePathname() == "/crew" ? withActive : withoutActive}><span className="header-nav-link dn-med">02</span> CREW</button></Link>
+                                </li>
+                                <li>
+                                    <Link href="/tech"><button className={usePathname() == "/tech" ? withActiveLast : withoutActiveLast}><span className="header-nav-link dn-med">03</span> TECHNOLOGY</button></Link>
+                                </li>
                             </ul>
                         </span>
                     </div>

@@ -1,6 +1,7 @@
 .home{
     &-bg{
         position: absolute;
+        z-index: -1;
         top: 0;
         left: 0;
         object-fit: cover;
@@ -8,10 +9,8 @@
     }
 
     &-content{
-        position: relative;
-        z-index: 1;
+        justify-content: space-between;
         align-items: end;
-        padding-right: 165px !important;
     }
 
     &-text{
@@ -20,6 +19,10 @@
         padding-top: 258px;
         margin-left: 110px;
 
+        h5{
+            color: hsl(231, 79, 90);
+        }
+
         h1{
             padding-top: 24px;
             padding-bottom: 24px;
@@ -27,7 +30,7 @@
 
         p{
             line-height: 32px;
-            color: var(--purple);
+            color: hsl(231, 79, 90);
         }
     }
 
@@ -36,7 +39,6 @@
         width: 274px;
 
         border: none;
-
         border-radius: 50%;
 
         color: hsl(229, 35, 7, 100%);
@@ -44,19 +46,97 @@
 
         text-align: center;
 
+        cursor: pointer;
+
         letter-spacing: 2px;
         line-height: 1px;
     }
 }
 
 @media screen and (max-width: 767px){
-    
+    .home{
+        &-content{
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+        }
+
+        &-text{
+            width: auto;
+
+            padding-top: 48px;
+            margin-left: 0;
+
+            text-align: center;
+
+            h5{
+                font-size: 16px;
+                letter-spacing: 2.7px;
+            }
+
+            h1{
+                padding-top: 16px;
+                padding-bottom: 16px;
+                font-size: 80px;
+                line-height: 100px;
+            }
+            p{
+                font-size: 15px;
+                line-height: 25px;
+                padding-bottom: 81px;
+            }
+
+            &-circle{
+                height: 150px;
+                width: 150px;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px){
+    .home{
+        &-content{
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+        }
+
+        &-text{
+            padding-top: 106px;
+            margin-left: 0;
+
+            text-align: center;
+
+            h5{
+                font-size: 20px;
+                letter-spacing: 3.38px;
+            }
+
+            p{
+                font-size: 16px;
+                line-height: 28px;
+                padding-bottom: 151px;
+            }
+        }
+
+        &-circle{
+            height: 242px;
+            width: 242px;
+        }
+    }
     
+    .page{
+        &-med{
+            padding: 24px 48px 0 48px !important;
+        }
+    }
 }
 
 @media screen and (min-width: 1440px){
-
+    .home{
+        &-content{
+            padding-right: 165px !important;
+        }
+    }
 }

@@ -134,6 +134,7 @@ body {
 
 .home-bg {
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
   -o-object-fit: cover;
@@ -141,15 +142,16 @@ body {
   background-repeat: no-repeat;
 }
 .home-content {
-  position: relative;
-  z-index: 1;
+  justify-content: space-between;
   align-items: end;
-  padding-right: 165px !important;
 }
 .home-text {
   width: 444px;
   padding-top: 258px;
   margin-left: 110px;
+}
+.home-text h5 {
+  color: hsl(231, 79%, 90%);
 }
 .home-text h1 {
   padding-top: 24px;
@@ -157,7 +159,7 @@ body {
 }
 .home-text p {
   line-height: 32px;
-  color: var(--purple);
+  color: hsl(231, 79%, 90%);
 }
 .home-circle {
   height: 274px;
@@ -167,10 +169,76 @@ body {
   color: hsl(229, 35%, 7%);
   background-color: #ffffff;
   text-align: center;
+  cursor: pointer;
   letter-spacing: 2px;
   line-height: 1px;
 }
 
+@media screen and (max-width: 767px) {
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  .home-text {
+    width: auto;
+    padding-top: 48px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .home-text h5 {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .home-text h1 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .home-text p {
+    font-size: 15px;
+    line-height: 25px;
+    padding-bottom: 81px;
+  }
+  .home-text-circle {
+    height: 150px;
+    width: 150px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  .home-text {
+    padding-top: 106px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .home-text h5 {
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+  .home-text p {
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 151px;
+  }
+  .home-circle {
+    height: 242px;
+    width: 242px;
+  }
+  .page-med {
+    padding: 24px 48px 0 48px !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .home-content {
+    padding-right: 165px !important;
+  }
+}
 .header li {
   list-style: none;
 }
@@ -188,7 +256,7 @@ body {
   display: inline-block;
   height: 3px;
   width: 24px;
-  background-color: var(--menu);
+  background-color: hsl(231, 77%, 90%);
   margin-bottom: 6px;
   transition: all 150ms ease-in-out;
 }
