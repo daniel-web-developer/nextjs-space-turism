@@ -73,9 +73,17 @@ p{
 }
 
 @media screen and (max-width: 767px){
+    h2{
+        font-size: 56px;
+    }
+
     h5{
         font-size: 16px;
         letter-spacing: 2.7px;
+    }
+
+    p{
+        font-size: 15px;
     }
 }
 
@@ -83,5 +91,9 @@ p{
     h5{
         font-size: 20px;
         letter-spacing: 3.38px;
+    }
+
+    p{
+        font-size: 16px;
     }
 }

@@ -11,7 +11,7 @@ export default function Header(){
     const withActive = "nav-text header-nav-each header-nav-each-active";
     const withoutActiveLast = "nav-text header-nav-each";
     const withActiveLast = "nav-text header-nav-each header-nav-each-last header-nav-each-active";
-    const withoutActiveFirst = "nav-text header-nav-each";
+    const withoutActiveFirst = "nav-text header-nav-each header-nav-each-first";
     const withActiveFirst = "nav-text header-nav-each header-nav-each-first header-nav-each-active";
 
     const [state, setState] = useState(false);
