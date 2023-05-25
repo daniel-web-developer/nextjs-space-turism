@@ -60,6 +60,7 @@ h5 {
 p {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 18px;
+  line-height: 32px;
   color: var(--white);
 }
 
@@ -76,12 +77,19 @@ p {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
+  h3 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 24px;
+  }
   h5 {
     font-size: 20px;
     letter-spacing: 3.38px;
   }
   p {
     font-size: 16px;
+    line-height: 28px;
   }
 }
 html {
@@ -576,5 +584,138 @@ body {
   .destination-desktop {
     position: absolute;
     right: 167px;
+  }
+}
+.crew-content {
+  padding-top: 76px;
+  padding-left: 166px;
+}
+.crew-text {
+  color: var(--white);
+  font-weight: 400;
+}
+.crew-text-number {
+  color: hsl(228, 6%, 33%);
+  font-weight: 700;
+  padding-right: 24px;
+}
+.crew-text-main {
+  padding-bottom: 154px;
+}
+.crew-role {
+  color: hsla(0, 100%, 100%, 0.5042);
+}
+.crew-name {
+  padding-top: 15px;
+  padding-bottom: 16px;
+}
+.crew-details {
+  height: 128px;
+  width: 444px !important;
+  color: var(--purple);
+  margin-bottom: 120px;
+}
+.crew-menu button {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: hsla(0, 100%, 100%, 0.1744);
+  border: none;
+  cursor: pointer;
+  margin-right: 24px;
+  transition: background-color 150ms ease-in-out;
+}
+.crew-menu button:last-child {
+  margin-right: 0;
+}
+.crew-menu button:hover {
+  background-color: hsla(0, 100%, 100%, 0.5001);
+}
+.crew-menu-active {
+  background-color: var(--white) !important;
+}
+.crew-inactive {
+  display: none;
+}
+.crew-active {
+  display: block;
+}
+.crew-image {
+  position: absolute;
+  bottom: 0;
+}
+.crew-image-1 {
+  right: 137px;
+}
+.crew-image-2 {
+  right: 187px;
+}
+.crew-image-3 {
+  right: 143px;
+}
+.crew-image-4 {
+  right: 89px;
+}
+
+@media screen and (max-width: 767px) {
+  .crew-content {
+    padding: 24px 24px 0 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .crew-content {
+    padding: 40px 39px 0 39px;
+  }
+  .crew-text-number {
+    padding-right: 16px;
+  }
+  .crew-text-main {
+    padding-bottom: 60px;
+  }
+  .crew-details {
+    height: 84px;
+    margin-bottom: 40px;
+  }
+  .crew-menu {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .crew-image {
+    position: relative;
+  }
+  .crew-image-1 {
+    height: 572px;
+    width: auto;
+    right: 0;
+    -o-object-position: 0 40px;
+       object-position: 0 40px;
+  }
+  .crew-image-2 {
+    height: 531px;
+    width: auto;
+    right: 0;
+    bottom: 0;
+  }
+  .crew-image-3 {
+    height: 532px;
+    width: auto;
+    right: 0;
+  }
+  .crew-image-4 {
+    height: 532px;
+    width: auto;
+    right: 0;
+  }
+  .crew-mobile {
+    flex-direction: column;
+  }
+  .crew-mobile-image {
+    display: flex;
+    justify-content: center;
+  }
+  .crew-info-mobile {
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
