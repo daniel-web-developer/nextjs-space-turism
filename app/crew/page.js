@@ -28,13 +28,19 @@ export default function Home() {
         <Image src={bgmed} fill alt="" className="page-bg dn-mob dn-desk" />
         <Image src={bgmob} fill alt="" className="page-bg dn-med dn-desk" />
       </div>
-      <div className="flex crew-content crew-mobile">
+      <div className="flex flex-justcont-sb crew-content crew-mobile">
         <div>
           <div className="flex crew-text-main">
             <h5 className="crew-text-number">02</h5>
             <h5 className="crew-text">MEET YOUR CREW</h5>
           </div>
-          <div className="crew-info-mobile">
+          <div className="crew-mobile-image crew-mobile-image-border">
+          <Image src={hurley} alt="" className={state === 0 ? "crew-active crew-image crew-image-1 dn-med dn-desk" : "crew-inactive"} />
+          <Image src={shuttleworth} alt="" className={state === 1 ? "crew-active crew-image crew-image-2 dn-med dn-desk" : "crew-inactive"} />
+          <Image src={glover} alt="" className={state === 2 ? "crew-active crew-image crew-image-3 dn-med dn-desk" : "crew-inactive"} />
+          <Image src={ansari} alt="" className={state === 3 ? "crew-active crew-image crew-image-4 dn-med dn-desk" : "crew-inactive"} />
+        </div>
+          <div className="crew-mobile-reverse"><div><div className="crew-info-mobile">
             <div className={state === 0 ? "crew-active" : "crew-inactive"}>
               <h4 className="crew-role">COMMANDER</h4>
               <h3 className="crew-name">DOUGLAS HURLEY</h3>
@@ -55,19 +61,19 @@ export default function Home() {
               <h3 className="crew-name">ANOUSHEH ANSARI</h3>
               <p className="crew-details">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.</p>
             </div>
-          </div>
+          </div></div>
           <div className="flex crew-menu">
             <button onClick={() => setNewCrew(0)} className={state === 0 ? "crew-menu-active" : ""}></button>
             <button onClick={() => setNewCrew(1)} className={state === 1 ? "crew-menu-active" : ""}></button>
             <button onClick={() => setNewCrew(2)} className={state === 2 ? "crew-menu-active" : ""}></button>
             <button onClick={() => setNewCrew(3)} className={state === 3 ? "crew-menu-active" : ""}></button>
-          </div>
+          </div></div>
         </div>
         <div className="crew-mobile-image">
-          <Image src={hurley} alt="" className={state === 0 ? "crew-active crew-image crew-image-1" : "crew-inactive"} />
-          <Image src={shuttleworth} alt="" className={state === 1 ? "crew-active crew-image crew-image-2" : "crew-inactive"} />
-          <Image src={glover} alt="" className={state === 2 ? "crew-active crew-image crew-image-3" : "crew-inactive"} />
-          <Image src={ansari} alt="" className={state === 3 ? "crew-active crew-image crew-image-4" : "crew-inactive"} />
+          <Image src={hurley} alt="" className={state === 0 ? "crew-active crew-image crew-image-1 dn-mob" : "crew-inactive"} />
+          <Image src={shuttleworth} alt="" className={state === 1 ? "crew-active crew-image crew-image-2 dn-mob" : "crew-inactive"} />
+          <Image src={glover} alt="" className={state === 2 ? "crew-active crew-image crew-image-3 dn-mob" : "crew-inactive"} />
+          <Image src={ansari} alt="" className={state === 3 ? "crew-active crew-image crew-image-4 dn-mob" : "crew-inactive"} />
         </div>
       </div>
 

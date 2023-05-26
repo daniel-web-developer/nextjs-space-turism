@@ -2,6 +2,7 @@
     &-content{
         padding-top: 76px;
         padding-left: 166px;
+        max-height: 828px;
     }
 
     &-text{
@@ -71,23 +72,23 @@
     }
 
     &-image{
-        position: absolute;
-        bottom: 0;
-
         &-1{
-            right: 137px;
+            margin-right: 137px;
         }
 
         &-2{
-            right: 187px;
+            margin-top: 48px;
+            margin-right: 187px;
         }
 
         &-3{
-            right: 143px;
+            margin-top: 43px;
+            margin-right: 143px;
         }
 
         &-4{
-            right: 89px;
+            margin-top: 86px;
+            margin-right: 89px;
         }
     }
 }
@@ -97,6 +98,96 @@
         &-content{
             padding: 24px 24px 0 24px;
         }
+
+        &-text{
+            &-main{
+                padding-bottom: 32px;
+            }
+        }
+
+        &-role{
+            font-size: 16px;
+        }
+
+        &-name{
+            font-size: 24px;
+
+            padding-top: 8px;
+            padding-bottom: 16px;
+        }
+
+        &-details{
+            height: auto;
+            width: auto !important;
+            margin-bottom: 0;
+        }
+
+        &-menu{
+            justify-content: center;
+            margin-top: 32px;
+            margin-bottom: 32px;
+
+            button{
+                height: 10px;
+                width: 10px;
+
+                margin-right: 16px;
+            }
+        }
+
+        &-mobile{
+            flex-direction: column;
+
+            &-image{
+                display: flex;
+                justify-content: center;
+
+                &-border{
+                    border-bottom: 1px solid #383B4B;
+                }
+            }
+
+            &-reverse{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+
+        &-info{
+            &-mobile{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+        &-image{
+            position: relative;
+            &-1{
+                height: 222px;
+                width: auto;
+                margin: 0;
+            }
+    
+            &-2{
+                height: 222px;
+                width: auto;
+                margin: 0;
+            }
+    
+            &-3{
+                height: 222px;
+                width: auto;
+                margin: 0;
+            }
+    
+            &-4{
+                height: 223px;
+                width: auto;
+                margin: 0;
+            }
+        }
+        
     }
 }
 
@@ -124,35 +215,39 @@
         &-menu{
             justify-content: center;
             margin-bottom: 40px;
+
+            button{
+                height: 10px;
+                width: 10px;
+
+                margin-right: 16px;
+            }
         }
 
         &-image{
-            position: relative;
-
             &-1{
                 height: 572px;
                 width: auto;
-                right: 0;
+                margin: 0;
                 object-position: 0 40px;
             }
     
             &-2{
                 height: 531px;
                 width: auto;
-                right: 0;
-                bottom: 0;
+                margin: 0;
             }
     
             &-3{
                 height: 532px;
                 width: auto;
-                right: 0;
+                margin: 0;
             }
     
             &-4{
                 height: 532px;
                 width: auto;
-                right: 0;
+                margin: 0;
             }
         }
 

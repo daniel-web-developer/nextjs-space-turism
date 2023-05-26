@@ -37,6 +37,10 @@ body{
     &-dir-col{
         flex-direction: column;
     }
+
+    &-dir-col-rev{
+        flex-direction: column-reverse;
+    }
 }
 
 .layout{
@@ -62,7 +66,7 @@ body{
 
 @media screen and (max-width: 767px){
     .dn-mob{
-        display: none;
+        display: none !important;
     }
 
     .page{
@@ -74,7 +78,7 @@ body{
 
 @media screen and (min-width: 768px) and (max-width: 1439px){
     .dn-med{
-        display: none;
+        display: none !important;
     }
 
     .page{
@@ -86,6 +90,6 @@ body{
 
 @media screen and (min-width: 1440px){
     .dn-desk{
-        display: none;
+        display: none !important;
     }
 }
