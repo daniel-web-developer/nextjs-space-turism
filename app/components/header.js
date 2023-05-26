@@ -36,7 +36,7 @@ export default function Header(){
                             <Link href="/crew"><button className={usePathname() == "/crew" ? withActive : withoutActive}><span className="header-nav-link dn-med">02</span> CREW</button></Link>
                         </li>
                         <li>
-                            <Link href="/tech"><button className={usePathname() == "/tech" ? withActiveLast : withoutActiveLast}><span className="header-nav-link dn-med">03</span> TECHNOLOGY</button></Link>
+                            <Link href="/technology"><button className={usePathname() == "/technology" ? withActiveLast : withoutActiveLast}><span className="header-nav-link dn-med">03</span> TECHNOLOGY</button></Link>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +60,7 @@ export default function Header(){
                                     <Link href="/crew"><button className={usePathname() == "/crew" ? withActive : withoutActive}><span className="header-nav-link dn-med">02</span> CREW</button></Link>
                                 </li>
                                 <li>
-                                    <Link href="/tech"><button className={usePathname() == "/tech" ? withActiveLast : withoutActiveLast}><span className="header-nav-link dn-med">03</span> TECHNOLOGY</button></Link>
+                                    <Link href="/technology"><button className={usePathname() == "/technology" ? withActiveLast : withoutActiveLast}><span className="header-nav-link dn-med">03</span> TECHNOLOGY</button></Link>
                                 </li>
                             </ul>
                         </span>

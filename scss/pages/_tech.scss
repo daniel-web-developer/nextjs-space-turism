@@ -1,0 +1,226 @@
+.tech{
+    &-content{
+        padding-top: 76px;
+        padding-left: 165px;
+    }
+
+    &-text{
+        color: var(--white);
+        font-weight: 400;
+
+        &-number{
+            color: hsl(228, 6%, 33%);
+            font-weight: 700;
+            padding-right: 24px;
+        }
+
+        &-main{
+            padding-bottom: 26px;
+        }
+    }
+
+    &-image{
+        height: 527px;
+        width: auto;
+    }
+
+
+    &-menu{
+
+        padding-right: 80px;
+
+        button{
+            margin-bottom: 32px;
+    
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        &-button{
+            display: block;
+            height: 80px;
+            width: 80px;
+
+            border: 2px solid hsl(0, 100%, 100%, 25%);
+            border-radius: 50%;
+            cursor: pointer;
+
+            background-color: transparent;
+
+            transition: all 100ms ease-in-out;
+
+            &:hover{
+                border-color: var(--white);
+            }
+            
+            &-active{
+                background-color: var(--white) !important;
+                border: 2px solid #ffffff;
+                
+                p{
+                    color: hsl(230, 35%, 7%) !important;
+                }
+            }
+        }
+    }
+
+    &-info{
+        h3{
+            padding-top: 11px;
+            padding-bottom: 18px;
+        }
+
+        p{
+            color: var(--purple);
+        }
+
+        &-main{
+            width: 444px;
+        }
+    }
+
+    &-active{
+        display: block;
+    }
+
+    &-inactive{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1439px){
+    .tech{
+        &-mobile{
+            &-order{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            
+            &-col{
+                flex-direction: column;
+            }
+
+            &-row{
+                flex-direction: row;
+            }
+        }
+
+        &-menu{
+            justify-content: center;
+
+            padding-right: 0;
+            padding-bottom: 44px;
+
+            button{
+                margin-bottom: 0;
+                margin-right: 16px;
+            }
+
+            &-button{
+                height: 60px;
+                width: 60px;
+            }
+        }
+
+        &-info{
+            align-items: center;
+            text-align: center;
+
+            h3{
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+
+            &-main{
+                width: 458px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .tech{
+        &-content{
+            padding: 24px 24px 0 24px;
+        }
+
+        &-image{
+            height: auto;
+            width: 100vw;
+
+            padding-top: 32px;
+            padding-bottom: 34px;
+        }
+
+        &-text{
+            &-main{
+                justify-content: center;
+            }
+
+            &-number{
+                padding-right: 14px;
+            }
+        }
+
+        &-menu{
+            padding-bottom: 26px;
+        }
+
+        &-info{
+            h3{
+                padding-top: 9px;
+                padding-bottom: 16px;
+
+                font-size: 24px;
+            }
+
+            &-main{
+                width: 327px;
+                line-height: 25px;
+            }
+        }
+    }
+
+    .nav{
+        &-text{
+            font-size: 14px;
+            letter-spacing: 2.36px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px){
+    .tech{
+        &-content{
+            padding: 40px 39px 0 39px;
+        }
+
+        &-text{
+            &-main{
+                padding-bottom: 0;
+            }
+
+            &-number{
+                padding-right: 16px;
+            }
+        }
+
+        &-image{
+            height: auto;
+            width: 100vw;
+
+            padding-top: 60px;
+            padding-bottom: 56px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .tech{
+        &-sb{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
