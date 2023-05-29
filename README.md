@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-
+![image](https://github.com/daniel-web-developer/nextjs-space-turism/assets/107224353/5dffa571-451f-49f7-bd40-5afbe0d4770f)
 
 ### Links
 
