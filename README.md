@@ -1,40 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - Space tourism website solution
 
-## Getting Started
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Table of contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### The challenge
 
-## Learn More
+Users should be able to:
 
-To learn more about Next.js, take a look at the following resources:
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Screenshot
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Links
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Live Site URL](https://nextjs-space-turism.vercel.app/)
 
-Useful links: https://nextjs.org/docs/app/api-reference/functions/use-router
+## My process
 
-https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+### Built with
 
-https://react.dev/reference/react/useState
+- [Nextjs](https://nextjs.org/)
+- JavaScript
+- JSX
+- [Sass](https://sass-lang.com/)
+- JavaScript
+- Flexbox
+- Desktop-first workflow
+
+### What I learned
+
+This was my first project using [Nextjs](https://nextjs.org/). I learned React some weeks ago and decided to try this amazing framework. I know I still have more things to learn but I'd say I'm relatively comfortable with Nextjs after this project.
+
+While doing this project, I decided to try different approaches and see what's best. The first pages I used the normal approach (desktop-first but making it responsive when I add new elements), on another I decided to do everything first for the desktop and then fix it for the other breakpoints (terrible idea), but at last (for the /technology page) I decided to plan everything first.
+
+It took me some time to decide which elements would be wrapped by divs and how to group the divs together but it made everything easier and faster in the end. I'll be using this approach in future projects.
+
+### Continued development
+
+I could re-do the pages I used less efficient approaches as described earlier.
+
+### Useful resources
+
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
+- [React - useState](https://react.dev/reference/react/useState)
+
+## Author
+
+- [Website](https://danieldevelops.tech/)
+- Github - [daniel-web-developer](https://github.com/daniel-web-developer)
+- Frontend Mentor - [@daniel-web-developer](https://www.frontendmentor.io/profile/daniel-web-developer)
