@@ -32,9 +32,9 @@ export default function Destination() {
   return (
     <Layout>
       <div>
-        <Image src={bgdesk} fill alt="" className="page-bg dn-mob dn-med" />
-        <Image src={bgmed} fill alt="" className="page-bg dn-mob dn-desk" />
-        <Image src={bgmob} fill alt="" className="page-bg dn-med dn-desk" />
+        <Image src={bgdesk} alt="" className="page-bg dn-mob dn-med" />
+        <Image src={bgmed} alt="" className="page-bg dn-mob dn-desk" />
+        <Image src={bgmob} alt="" className="page-bg dn-med dn-desk" />
       </div>
       <div className="destination-content">
         <div className="flex destination-text-main">

@@ -62,7 +62,7 @@
         height: 100vh;
         width: 254px;
 
-        backdrop-filter: blur(20px);
+        backdrop-filter: blur(50px);
 
         transform: translate(100%);
 
@@ -86,7 +86,7 @@
             height: 96px;
             width: 830px;
             align-self: end;
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(50px);
         }
 
         &-link{
@@ -165,7 +165,7 @@
                 height: 96px;
                 width: 450px;
                 align-self: end;
-                backdrop-filter: blur(20px);
+                backdrop-filter: blur(50px);
             }
 
             &-each{

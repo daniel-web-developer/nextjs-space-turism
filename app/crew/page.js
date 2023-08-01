@@ -24,9 +24,9 @@ export default function Home() {
   return (
     <Layout>
       <div>
-        <Image src={bgdesk} fill alt="" className="page-bg dn-mob dn-med" />
-        <Image src={bgmed} fill alt="" className="page-bg dn-mob dn-desk" />
-        <Image src={bgmob} fill alt="" className="page-bg dn-med dn-desk" />
+        <Image src={bgdesk} alt="" className="page-bg dn-mob dn-med" />
+        <Image src={bgmed} alt="" className="page-bg dn-mob dn-desk" />
+        <Image src={bgmob} alt="" className="page-bg dn-med dn-desk" />
       </div>
       <div className="flex flex-justcont-sb crew-content crew-mobile">
         <div>
